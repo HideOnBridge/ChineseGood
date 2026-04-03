@@ -5,7 +5,7 @@
 body {
   margin: 0;
   font-family: "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
-  background: radial-gradient(circle at top, #1b2b59 0%, #0f1225 55%, #080911 100%);
+  background: radial-gradient(circle at top, #243a78 0%, #141936 52%, #080a14 100%);
   color: #f5f8ff;
   min-height: 100vh;
 }
@@ -18,10 +18,11 @@ body {
 
 h1 {
   margin-bottom: 8px;
+  text-shadow: 0 0 14px rgba(145, 198, 255, 0.4);
 }
 
 .hint {
-  color: #cbd6ff;
+  color: #d8e4ff;
   margin-top: 0;
   margin-bottom: 14px;
 }
@@ -37,22 +38,23 @@ h1 {
   height: 14px;
   border-radius: 99px;
   overflow: hidden;
-  border: 1px solid #4d5b8f;
+  border: 1px solid #6475af;
   background: #0f1631;
   margin-top: 6px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.35);
 }
 
 .bar > div {
   height: 100%;
-  transition: width 150ms ease;
+  transition: width 120ms ease;
 }
 
 .hp > div {
-  background: linear-gradient(90deg, #f05454, #ff9494);
+  background: linear-gradient(90deg, #f14d4d, #ff9f7e);
 }
 
 .qi > div {
-  background: linear-gradient(90deg, #4dd7ff, #a46bff);
+  background: linear-gradient(90deg, #39d9ff, #ab67ff);
 }
 
 canvas {
@@ -61,8 +63,9 @@ canvas {
   width: 100%;
   height: auto;
   border-radius: 14px;
-  border: 1px solid #516198;
+  border: 1px solid #6074b6;
   background: linear-gradient(180deg, #182348 0%, #0e1430 70%, #0b0f22 100%);
+  box-shadow: 0 14px 40px rgba(3, 8, 27, 0.6), 0 0 30px rgba(116, 153, 255, 0.2);
 }
 
 .controls {
@@ -81,17 +84,20 @@ button {
   cursor: pointer;
   color: #0b1020;
   background: #f2f5ff;
+  transition: transform 120ms ease, filter 120ms ease;
 }
 
 button:hover {
   transform: translateY(-1px);
+  filter: brightness(1.04);
 }
 
 #startBtn {
-  background: #ffd65a;
+  background: linear-gradient(90deg, #ffd65a, #ffc247);
 }
 
 #message {
   min-height: 1.6em;
-  color: #ffdd7f;
+  color: #ffe08a;
+  text-shadow: 0 0 10px rgba(255, 196, 0, 0.25);
 }
