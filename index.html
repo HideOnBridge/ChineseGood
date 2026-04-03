@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>火柴人对抗小游戏</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>⚔️ 火柴人对抗：点击即玩</h1>
+      <p class="hint">操作：点击按钮或按键（J 出拳 / K 踢脚 / L 炫彩光标 / U 大招）</p>
+
+      <div class="hud">
+        <div>
+          <span>你</span>
+          <div class="bar hp"><div id="playerHp"></div></div>
+          <div class="bar qi"><div id="playerQi"></div></div>
+        </div>
+        <div>
+          <span>敌人</span>
+          <div class="bar hp"><div id="enemyHp"></div></div>
+          <div class="bar qi"><div id="enemyQi"></div></div>
+        </div>
+      </div>
+
+      <canvas id="game" width="900" height="460" aria-label="火柴人格斗画布"></canvas>
+
+      <div class="controls">
+        <button id="startBtn">点击开始</button>
+        <button id="punchBtn">出拳 (J)</button>
+        <button id="kickBtn">踢脚 (K)</button>
+        <button id="cursorBtn">炫彩光标 (L)</button>
+        <button id="ultBtn">大招 (U)</button>
+      </div>
+
+      <p id="message">准备好后点击“点击开始”。</p>
+    </div>
+
+    <script src="game.js"></script>
+  </body>
+</html>
