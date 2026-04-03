@@ -1,0 +1,97 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "PingFang SC", "Microsoft YaHei", system-ui, -apple-system, sans-serif;
+  background: radial-gradient(circle at top, #1b2b59 0%, #0f1225 55%, #080911 100%);
+  color: #f5f8ff;
+  min-height: 100vh;
+}
+
+.container {
+  width: min(980px, 95vw);
+  margin: 18px auto;
+  text-align: center;
+}
+
+h1 {
+  margin-bottom: 8px;
+}
+
+.hint {
+  color: #cbd6ff;
+  margin-top: 0;
+  margin-bottom: 14px;
+}
+
+.hud {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.bar {
+  height: 14px;
+  border-radius: 99px;
+  overflow: hidden;
+  border: 1px solid #4d5b8f;
+  background: #0f1631;
+  margin-top: 6px;
+}
+
+.bar > div {
+  height: 100%;
+  transition: width 150ms ease;
+}
+
+.hp > div {
+  background: linear-gradient(90deg, #f05454, #ff9494);
+}
+
+.qi > div {
+  background: linear-gradient(90deg, #4dd7ff, #a46bff);
+}
+
+canvas {
+  display: block;
+  margin: 0 auto;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid #516198;
+  background: linear-gradient(180deg, #182348 0%, #0e1430 70%, #0b0f22 100%);
+}
+
+.controls {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+button {
+  border: none;
+  border-radius: 10px;
+  padding: 10px 14px;
+  font-weight: 700;
+  cursor: pointer;
+  color: #0b1020;
+  background: #f2f5ff;
+}
+
+button:hover {
+  transform: translateY(-1px);
+}
+
+#startBtn {
+  background: #ffd65a;
+}
+
+#message {
+  min-height: 1.6em;
+  color: #ffdd7f;
+}
